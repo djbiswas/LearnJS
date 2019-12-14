@@ -1,0 +1,9 @@
+
+var name = prompt("What is your name?");
+var email = prompt("Enter your email");
+
+Sum of 2 variable 
+var no1 = prompt("Enter 1st number");
+var no2 = prompt("Enter 2nd number");
+
+var sum = no1 + no2;
