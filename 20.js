@@ -18,16 +18,12 @@ var database = [
 ];
 var newsFeed = [
     {
-        username: "Sabbir",
-        timeline: "Sa anok kotha pora bolbo!"
+        username: "Dipjyoti",
+        timeline: "Ato porar chap!"
     },
     {
         username: "Dip",
         timeline: "Dekhben jal hobe ghuni!"
-    },
-    {
-        username: "dj",
-        timeline: "Sa anok kotha pora bolbo!"
     }
 ];
 
@@ -35,7 +31,7 @@ var newsFeed = [
 
 
 function isUserValid(username,password) {
-    for(var i=0; i < database.length; i++){
+    for(var i=0; i < database.lemgth;i++){
         if(database[i].username === username && database[i].password === password){
             return true;
         }
@@ -46,9 +42,7 @@ function isUserValid(username,password) {
 function singIn(username, password) {
 
     if (isUserValid(username,password)) {
-        document.getElementById("username").innerHTML = "Dipjyoti!";
-        document.getElementById("post").innerHTML = "Thanks For Login!!";
-        document.getElementById("feed").innerHTML = "সে অনেক কথা পরে একদিন বলবো!";
+        console.log(newsFeed);
     }else{
         alert("Wrong user name and password");
     }
