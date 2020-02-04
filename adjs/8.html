@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Es8</title>
+</head>
+<body>
+
+<h1>Debuging</h1>
+<p id="demo"></p>
+<p>With the debugger turned on, the code below should stop executing before it executes the third line.</p>
+
+
+<script>
+
+    var x = 15 * 5;
+    debugger;
+    document.getElementById("demo").innerHTML = x;
+</script>    
+</body>
+</html>

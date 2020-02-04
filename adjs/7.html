@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Advance Looping</title>
+</head>
+<body>
+
+    <h1>Advance Looping</h1>
+
+
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+ 
+
+<script>
+    const basket = ['apples', 'oranges', 'grapes'];
+    const detailedBasket = {
+    apples: 5,
+    oranges: 10,
+    grapes: 1000
+    }
+
+    //1
+    for (let i = 0; i < basket.length; i++) {
+    //console.log(basket[i]);
+    document.getElementById("demo1").innerHTML  = ([i]);
+    }
+
+    //2
+    basket.forEach(item => {
+    //console.log(item);
+    document.getElementById("demo2").innerHTML  = (item);
+    })
+
+    for (item in detailedBasket) {
+    //console.log(item);
+    }
+    document.getElementById("demo3").innerHTML  = (item);
+    for (item of basket) {
+    //console.log(item);
+    document.getElementById("demo4").innerHTML  = (item);
+    }
+</script>
+</body>
+</html>
